@@ -151,19 +151,19 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃    ESC    ┃   BT CLR  ┃     UP    ┃     =     ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃    KP +   ┃
+            //             ┃    ESC    ┃   BT CLR  ┃     UP    ┃     =     ┃     [     ┃   ┃     ]     ┃     7     ┃     8     ┃     9     ┃    KP +   ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃   SHIFT   ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃    KP -   ┃
+            //             ┃   SHIFT   ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃     (     ┃   ┃     )     ┃     4     ┃     5     ┃     6     ┃    KP -   ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ CAPS WORD ┃    DEL    ┃    PGUP   ┃    CAPS   ┃    PGDN   ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃    KP *   ┃           ┃
+            // ┃ CAPS WORD ┃    DEL    ┃    PGUP   ┃    CAPS   ┃    PGDN   ┃     {     ┃   ┃     }     ┃     1     ┃     2     ┃     3     ┃    KP *   ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃           ┃           ┃           ┃   ┃    ADJ    ┃    KP 0   ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-                            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-                &caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBKT    &kp RBKT  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+                            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LPAR    &kp RPAR  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
+                &caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LBRC    &kp RBRC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
                                                    &trans    &trans     &trans      &adj_sig  &kp KP_N0     &trans
             >;
         };
