@@ -18,6 +18,6 @@ Pushing to `main` builds the firmware on GitHub Actions. `zmk download` opens th
 Unzip `firmware.zip` from the latest successful run. Then, for each half:
 
 1. Plug the half in over USB and double-press its reset button. A drive appears on the Mac.
-2. Drag that half's file onto the drive. Use `totem_left-xiao_ble-zmk.uf2` for the left and `totem_right-xiao_ble-zmk.uf2` for the right. The drive ejects itself when it's done.
+2. Drag that half's file onto the drive. Use `totem_left-xiao_ble__zmk-zmk.uf2` for the left and `totem_right-xiao_ble__zmk-zmk.uf2` for the right. The drive ejects itself when it's done.
 
-If the halves stop talking to each other or Bluetooth pairing gets stuck, flash `settings_reset-xiao_ble-zmk.uf2` onto **both** halves first, then flash left and right again. This wipes all pairings, so you'll have to pair the keyboard with your Mac again.
+If the halves stop talking to each other or Bluetooth pairing gets stuck, flash `settings_reset-xiao_ble__zmk-zmk.uf2` onto **both** halves first, then flash left and right again. This wipes all pairings, so you'll have to pair the keyboard with your Mac again.
